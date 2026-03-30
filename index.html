@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sara Alves Depilação</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background: linear-gradient(to bottom, #ffe6ec, #fff);
+    color:#333;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('WhatsApp Image 2026-03-30 at 14.49.29.jpeg') center/cover;
+    background-position: 60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(255,182,193,0.5);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+}
+
+.hero h1{font-size:40px;}
+.hero p{margin:15px 0;}
+
+.btn{
+    background:#ff4d88;
+    padding:12px 25px;
+    border-radius:30px;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{background:#e63c75;}
+
+/* TABELA */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.tabela{
+    max-width:600px;
+    margin:auto;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    padding:10px;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+.item span:last-child{
+    color:#ff4d88;
+    font-weight:bold;
+}
+
+/* GALERIA */
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+    margin-top:30px;
+}
+
+.galeria img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow: 0 5px rgba(0, 0, 0, 2);
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+/* SPA */
+.spa{
+    margin-top:60px;
+}
+
+.spa img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.spa p{margin:10px 0;}
+
+/* ANIMAÇÃO */
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* WHATSAPP */
+.zap{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Sara Alves</h1>
+        <p>Depilação, Designer e Spa</p>
+        <a href="https://wa.me/5599991226672" class="btn">Agendar Agora</a>
+    </div>
+</section>
+
+<section class="section fade">
+    <h2>Tabela de Valores</h2>
+
+    <div class="tabela">
+        <div class="item"><span>designer de Sobrancelha</span><span>R$25</span></div>
+        <div class="item"><span>designer com Henna</span><span>R$40</span></div>
+        <div class="item"><span>Axila</span><span>R$25</span></div>
+        <div class="item"><span>Buço</span><span>R$15</span></div>
+        <div class="item"><span>Virilha completa</span><span>R$55</span></div>
+        <div class="item"><span>Meia perna</span><span>R$30</span></div>
+        <div class="item"><span>Perna completa</span><span>R$60</span></div>
+    </div>
+
+    <!-- GALERIA (14 IMAGENS) -->
+    <div class="galeria">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.27 (1).jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.27 (2).jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.27.jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.28 (1).jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.28.jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.29.jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.39.jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.30.jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.40 (1).jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.40 (2).jpeg">
+        <img src="WhatsApp Image 2026-03-30 at 14.49.40.jpeg">
+    </div>
+
+    <!-- SPA -->
+    <div class="spa fade">
+        <h2> Spar dos pés</h2>
+        <img src="WhatsApp Image 2026-03-30 at 14.49.30.jpeg">
+        <p>Relaxamento, cuidado e bem-estar completo para você 💖</p>
+        <a href="https://wa.me/5599991226672" class="btn">Agendar Spar</a>
+    </div>
+
+</section>
+
+<a href="https://wa.me/5599991226672" class="zap">💬</a>
+
+<script>
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if(pos < window.innerHeight - 100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
